@@ -7,7 +7,7 @@
   top: 0;
   height: 100%;
   z-index: 999999;
-  width: 260px;
+  width: 180px;
   overflow-x: none;
   overflow-y: auto;
   /* Theme Settings */
@@ -70,39 +70,7 @@
   margin-right: 15px;
 }
 /* line 65, ../../src/scss/sidr/_base.scss */
-.sidr ul {
-  display: block;
-  margin: 0 0 15px;
-  padding: 0;
-  border-top: 1px solid #1a1a1a;
-  border-bottom: 1px solid #4d4d4d;
-}
-/* line 72, ../../src/scss/sidr/_base.scss */
-.sidr ul li {
-  display: block;
-  margin: 0;
-  line-height: 48px;
-  border-top: 1px solid #4d4d4d;
-  border-bottom: 1px solid #1a1a1a;
-}
-/* line 81, ../../src/scss/sidr/_base.scss */
-.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
-  border-top: none;
-  line-height: 49px;
-}
-/* line 85, ../../src/scss/sidr/_base.scss */
-.sidr ul li:hover > a, .sidr ul li:hover > span, .sidr ul li.active > a, .sidr ul li.active > span, .sidr ul li.sidr-class-active > a, .sidr ul li.sidr-class-active > span {
-  -webkit-box-shadow: inset 0 0 15px 3px #222222;
-  -moz-box-shadow: inset 0 0 15px 3px #222222;
-  box-shadow: inset 0 0 15px 3px #222222;
-}
-/* line 90, ../../src/scss/sidr/_base.scss */
-.sidr ul li a, .sidr ul li span {
-  padding: 0 15px;
-  display: block;
-  text-decoration: none;
-  color: white;
-}
+
 /* line 97, ../../src/scss/sidr/_base.scss */
 .sidr ul li ul {
   border-bottom: none;

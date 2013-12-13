@@ -11,6 +11,11 @@ v1.6.1
 Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark
 */
+
+@font-face {
+  font-family: Segoe UI;
+  src: url(../fonts/segoeui.ttf) format("opentype");
+}
 html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;font-size:100%;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
  
 /* Minimal base styles
@@ -86,6 +91,9 @@ label {}
 /* ------------------------- Lists */
  
 /* ------------------------- Layout */
+.white{
+	background:#fff;
+}
  .page-wrapp{
 	
 	
@@ -98,6 +106,54 @@ label {}
 	height:47px;
 	margin-top:30px;
  }
+ .filter-head ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+ }
+ .filter-head ul li{
+	float:left;
+	padding:0px 10px;
+	width:16.666666666666664%;
+ }
+ .filter-head ul li a{
+	color:#fff;
+	text-shadow:0px 1px 2px rgba(0,0,0,0.6);
+	display:block;
+	font-size:16px;
+	line-height:47px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	font-family:'Segoe UI';
+ }
+ .filter-head ul li a:hover{
+	text-decoration:none;
+ }
+ .filtered{
+	text-align:center;
+	margin-top:5px;
+	padding:0px 0px!important;
+	height:50px;
+	line-height:50px;
+	
+	
+ }
+ .filtered .inner {
+	margin-right:5px;
+	background:#fff;
+	color:#313131;
+	font-family:'Segoe UI';
+	opacity:0.9;
+ }
+ .filtered:last-child .inner{
+	margin-right:0px;
+ }
+.filtered .comm {
+line-height: 16px;
+height:50px;
+}
+ 
  .sidebar{
 	position:fixed;
 	left:0px;
@@ -105,6 +161,48 @@ label {}
 	height:100%;
 	width:50px;
 	background:#333;
+ }
+ .sidebar ul, .sidr ul{
+	margin:0px;
+	padding:5px;
+ }
+ .sidebar ul li, .sidr ul li{
+	margin-top:10px;
+ }
+ .sidebar ul li a {
+	font-size:22px;
+	color:#4d8080;
+	line-height:33px;
+	display:block;
+	border:1px solid #4d8080;
+	border-radius:40px;
+	text-align: center;
+padding: 6px 0px 0px 0px;
+ }
+ .sidr ul li span{
+	width:40px;
+	color:#4d8080;
+	
+ }
+ .sidebar .logo-one{
+	width:40px;
+	margin:40px 5px 30px 5px;
+ }
+ .arrow-open{
+	position: absolute;
+bottom: 30px;
+font-size: 13px;
+color: #4d8080;
+line-height: 33px;
+display: block;
+border: 1px solid #4d8080;
+border-radius: 40px;
+text-align: center;
+padding: 4px 12px 2px 13px;
+margin-left: 5px;
+ }
+ .sidr.left .arrow-open{
+	left:35%;
  }
 /* ------------------------- Popups */
  
