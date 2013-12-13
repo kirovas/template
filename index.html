@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/jquery.sidr.dark.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+  </head>
+  <body>
+    <div class="page-wrapp">
+		<!-- start container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header">
+						<img src="images/head-crs.png" />
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="filter-head"></div>
+				</div>
+			
+			</div>
+		</div>
+		<!-- end container -->
+		<div class="sidebar"><ul>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+				</ul>
+				<a rel="left-menu" href="#sidr-left">Открыть</a>
+				</div>
+		<!-- slide menu left-->
+		<a rel="left-menu" href="#sidr-left">Открыть</a>
+		<div id="sidr-left" class="sidr left">
+			<div id="navigation">
+				<ul>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+					<li><a href="#">text</a></li>
+				</ul>
+			
+			</div>
+		</div>
+		<!-- slide menu left-->
+		
+		
+		
+		
+		
+	</div>
+	<!--//////////////////////// Page wrap end /////////////////////////////-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+	<script src="js/jquery.sidr.js"></script>
+	<script>
+$(document).ready(function() {
+    $('a[rel="left-menu"]').sidr({
+      name: 'sidr-left',
+      side: 'left', // By default
+	  source: '#navigation'
+    });
+    
+});
+</script>
+  </body>
+</html>
