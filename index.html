@@ -41,7 +41,7 @@
 							</li>
 							<li class="dropdown"><a  href="#">Vessel type</a>
 								<ul class="sub" style="display:none;">
-									<li><a href="#">Captain</a></li>
+									<li><a href="#">Bulk</a></li>
 								</ul>
 							</li>
 							<li><a  href="#">Salary</a></li>
@@ -56,15 +56,31 @@
 				</div>
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-md-10 col-md-offset-2 col-xs-offset-2">
+						<div class="col-md-10 col-md-offset-2 col-xs-offset-2 fil Rank">
 							<div class="col-md-2 filtered" ><div class="inner" ><div >Beng</div></div></div>
 							<div class="col-md-2 filtered"> <div class="inner"><div >Bulker Antonella </div></div></div>
 							<div class="col-md-2 filtered"><div class="inner"><div >Beng</div></div></div>
 							<div class="col-md-2 filtered"> <div class="inner"><div >Bulker Antonella </div></div></div>
 							<div class="col-md-2 filtered"><div class="inner"><div >JD 01-05.10.13</div></div></div>
-							<div class="col-md-2 filtered "><div class="inner"><div class="comm">Beng is needed  
-Bulker Antonella 
-JD 01-05.10.13
+							<div class="col-md-2 filtered "><div class="inner"><div class="comm">Beng is needed Bulker Antonella JD 01-05.10.13
+</div></div></div>
+						</div>
+						<div class="col-md-10 col-md-offset-2 col-xs-offset-2 fil Bulk">
+							<div class="col-md-2 filtered" ><div class="inner" ><div >Beng</div></div></div>
+							<div class="col-md-2 filtered"> <div class="inner"><div >Bulker Antonella </div></div></div>
+							<div class="col-md-2 filtered"><div class="inner"><div >Beng</div></div></div>
+							<div class="col-md-2 filtered"> <div class="inner"><div >Bulker Antonella </div></div></div>
+							<div class="col-md-2 filtered"><div class="inner"><div >JD 01-05.10.13</div></div></div>
+							<div class="col-md-2 filtered "><div class="inner"><div class="comm">Beng is needed Bulker Antonella JD 01-05.10.13
+</div></div></div>
+						</div>
+						<div class="col-md-10 col-md-offset-2 col-xs-offset-2 fil Captain">
+							<div class="col-md-2 filtered" ><div class="inner" ><div >Captain</div></div></div>
+							<div class="col-md-2 filtered"> <div class="inner"><div >Bulker Antonella </div></div></div>
+							<div class="col-md-2 filtered"><div class="inner"><div >Beng</div></div></div>
+							<div class="col-md-2 filtered"> <div class="inner"><div >Bulker Antonella </div></div></div>
+							<div class="col-md-2 filtered"><div class="inner"><div >JD 01-05.10.13</div></div></div>
+							<div class="col-md-2 filtered "><div class="inner"><div class="comm">Beng is needed Bulker Antonella JD 01-05.10.13
 </div></div></div>
 						</div>
 					</div>
@@ -83,7 +99,7 @@ JD 01-05.10.13
 					<li><a href="#"><span class="glyphicon glyphicon-dashboard"></span></a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span></a></li>
 				</ul>
-				<a rel="left-menu" href="#sidr-left" class="arrow-open"><span class="glyphicon glyphicon-chevron-up"></span></a>
+				<a rel="left-menu" href="#sidr-left" class="arrow-open"><span class="glyphicon glyphicon-chevron-right"></span></a>
 				</div>
 		<!-- slide menu left-->
 		
@@ -152,6 +168,16 @@ $(document).ready(function() {
     $("#select-r select").change(function() {
         window.location = $(this).find("option:selected").val();
     });
+	///////
+	$('#navi-r a').click(function() {
+    var el = $(this).text();
+         $("." + el).fadeIn( "slow", function() {
+    // Animation complete
+  });   
+        
+});
+  
+	///////
 });
 </script>
   </body>

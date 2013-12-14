@@ -185,15 +185,18 @@ label {}
 .filtered .comm {
 line-height: 16px;
 height:50px;
+padding:0px 3px;
 }
- 
+ .Bulk , .Rank, .Captain{
+	display:none;
+ }
  .sidebar{
 	position:fixed;
 	left:0px;
 	top:0px;
 	height:100%;
 	width:50px;
-	background:#333;
+	background: url(../images/sidebar-bg.png);
  }
  .sidebar ul, .sidr ul{
 	margin:0px;
