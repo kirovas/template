@@ -320,7 +320,21 @@ margin-left: 5px;
 @media only screen 
 and (max-width : 320px) {
     /* Styles */
- 
+ .filter-head ul.navi li{
+	width:100%;
+	background:url(../images/filter-bg.png) no-repeat right;
+ }
+ ul.sub{
+	position:relative;
+	overflow:hidden;
+	margin: 0px 0px 0px -4px;
+ }
+ .fil{
+	background:#2c95a8;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+ }
 }
  
 /* Smartphones (landscape) ----------- */
@@ -328,7 +342,29 @@ and (max-width : 320px) {
 and (min-width : 321px)
 and (max-width : 480px) {
     /* Styles */
- 
+.filter-head{
+	height:auto;
+background-position:top;	
+	}
+ .filter-head ul.navi li{
+	width:100%;
+	
+ }
+ .filter-head ul{
+	background:#2c95a8;
+	overflow:hidden;
+ }
+ ul.sub{
+	position:relative;
+	overflow:hidden;
+	margin: 0px 0px 0px -4px;
+ }
+ .fil{
+	background:#2c95a8;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+ }
 }
  
 /* iPads (portrait) ----------- */
@@ -336,7 +372,29 @@ and (max-width : 480px) {
 and (min-width : 481px)
 and (max-width : 768px) {
     /* Styles */
- 
+.filter-head{
+	height:auto;
+background-position:top;	
+	}
+.filter-head ul.navi li{
+	width:100%;
+	
+ }
+ .filter-head ul{
+	background:#2c95a8;
+	overflow:hidden;
+ }
+ ul.sub{
+	position:relative;
+	overflow:hidden;
+	margin: 0px 0px 0px -4px;
+ }
+ .fil{
+	background:#2c95a8;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+ }
 }
  
 /* iPads (landscape) ----------- */
