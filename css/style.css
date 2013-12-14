@@ -104,24 +104,33 @@ label {}
  .filter-head{
 	background:url(../images/filter-bg.png) no-repeat left;
 	height:47px;
-	margin-top:30px;
+	margin-top:20px;
  }
- .filter-head ul{
+ .filter-head ul.navi{
 	list-style:none;
 	margin:0px;
-	padding:0px;
+	padding:8px 0px;
  }
- .filter-head ul li{
+ .filter-head ul.navi li{
 	float:left;
 	padding:0px 10px;
 	width:16.666666666666664%;
+	position:relative;
+	border-right:1px solid #67b3bd;
  }
- .filter-head ul li a{
+ .filter-head ul.navi li:last-child{
+	border:none;
+ 
+ }
+ .filter-head ul.navi li.dropdown > a{
+	background:url(../images/icon-list.png)no-repeat right;
+}
+ .filter-head ul.navi li a{
 	color:#fff;
 	text-shadow:0px 1px 2px rgba(0,0,0,0.6);
 	display:block;
 	font-size:16px;
-	line-height:47px;
+	line-height:32px;
 	font-weight:bold;
 	text-align:center;
 	text-decoration:none;
@@ -129,6 +138,30 @@ label {}
  }
  .filter-head ul li a:hover{
 	text-decoration:none;
+ }
+ .filter-head select{
+	margin:20px auto 0px auto;
+ }
+ ul.sub{
+	display:none;
+	position:absolute;
+	margin: 0px 0px 0px -10px;
+	padding:7px 0px;
+	width:100%;
+	background:#2894a2;
+	z-index:3;
+	text-align:center;
+ }
+ .sub li {
+	display:block;
+	width:100%!important;
+	padding:0px!important;
+	border-right:none!important;
+ }
+ .sub li a{
+	display:block;
+	text-align:center;
+	background:none!important;
  }
  .filtered{
 	text-align:center;
@@ -169,6 +202,31 @@ height:50px;
  .sidebar ul li, .sidr ul li{
 	margin-top:10px;
  }
+ .sidr ul li a{
+	font-size:18px;
+	color:#4d8080;
+	line-height:33px;
+	display:inline-block;
+	font-family:'segoe UI';
+}
+.sidr ul li a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+.sidr ul li a:hover span{
+	color:#fff;
+}
+.icon {
+border: 1px solid #4d8080;
+border-radius: 40px;
+padding: 4px 8px 3px 8px;
+margin-right:3px;
+font-size:22px;
+}
+.sidr ul li a:hover .icon{
+	color:#fff;
+	border-color:#fff;
+}
  .sidebar ul li a {
 	font-size:22px;
 	color:#4d8080;
@@ -179,6 +237,24 @@ height:50px;
 	text-align: center;
 padding: 6px 0px 0px 0px;
  }
+ .sidebar ul li a:hover{
+	color:#fff;
+	border-color:#fff;
+ 
+ }
+ .sidr ul li a.active span{
+	color:#dcc513;
+ }
+ .sidr ul li a.active .icon{
+	border-color:#dcc513;
+ 
+ }
+ .sidebar ul li a.active, .sidr ul li a.active{
+	color:#dcc513;
+ }
+ .sidebar ul li a.active{
+	border-color:#dcc513;
+ }
  .sidr ul li span{
 	width:40px;
 	color:#4d8080;
@@ -188,6 +264,10 @@ padding: 6px 0px 0px 0px;
 	width:40px;
 	margin:40px 5px 30px 5px;
  }
+ .logo-two {
+width: 160px;
+margin: 40px auto 30px auto;
+}
  .arrow-open{
 	position: absolute;
 bottom: 30px;

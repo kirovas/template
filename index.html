@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="windows-1251">
+  <meta charset="utf-8">
     <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet">
@@ -31,10 +31,19 @@
 					<div class="filter-head">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-2 col-xs-offset-2"> 
-						<div class="row">
-						<ul >
-							<li><a  href="#">Rank</a></li>
-							<li><a  href="#">Vessel type</a></li>
+						<div class="row" id="select-r">
+						<ul class="navi hidden-xs " id="navi-r">
+							<li class="dropdown"><a  href="#">Rank</a>
+								<ul class="sub" style="display:none;">
+									<li><a href="#">Captain</a></li>
+									<li><a href="#">Captain</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a  href="#">Vessel type</a>
+								<ul class="sub" style="display:none;">
+									<li><a href="#">Captain</a></li>
+								</ul>
+							</li>
 							<li><a  href="#">Salary</a></li>
 							<li><a  href="#">Duration</a></li>
 							<li><a  href="#">Joindate</a></li>
@@ -67,7 +76,7 @@ JD 01-05.10.13
 		<div class="sidebar">
 			<div class="logo-one"><img src="images/logo-one.png"/></div>
 		<ul>
-					<li><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></li>
+					<li><a class="active" href="#"><span class="glyphicon glyphicon-eye-open"></span></a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span></a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span></a></li>
@@ -79,14 +88,15 @@ JD 01-05.10.13
 		<!-- slide menu left-->
 		
 		<div id="sidr-left" class="sidr left">
+		<div class="logo-two"><img src="images/logo-two.png"/></div>
 			<div id="navigation">
 				<ul>
-					<li><a href="#"><span class="glyphicon glyphicon-eye-open"></span>Main</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>Abaut us</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-search"></span>For clients</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>For seamen</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-dashboard"></span>For subagents</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>Contuct us</a></li>
+					<li><a class="active" href="#"><i class="icon"><span class="glyphicon glyphicon-eye-open"></span></i>Main</a></li>
+					<li><a href="#"><i class="icon"><span class="glyphicon glyphicon-list-alt"></span></i>Abaut us</a></li>
+					<li><a href="#"><i class="icon"><span class="glyphicon glyphicon-search"></span></i>For clients</a></li>
+					<li><a href="#"><i class="icon"><span class="glyphicon glyphicon-list-alt"></span></i>For seamen</a></li>
+					<li><a href="#"><i class="icon"><span class="glyphicon glyphicon-dashboard"></span></i>For subagents</a></li>
+					<li><a href="#"><i class="icon"><span class="glyphicon glyphicon-info-sign"></span></i>Contuct us</a></li>
 				</ul>
 			
 			</div>
@@ -112,7 +122,36 @@ $(document).ready(function() {
       side: 'left' // By default
 	  
     });
-    
+	$('.filter-head ul li').hover(function(){
+        $(this).find('.sub').show(200);
+    }, function(){
+        $(this).find('.sub').hide(500);
+    });
+	
+    // Create the dropdown base
+    $("<select class='visible-xs' />").appendTo("#select-r");
+
+    // Create default option "Go to..."
+    $("<option />", {
+        "selected": "selected",
+        "value"   : "",
+        "text"    : "Меню..."
+    }).appendTo("#select-r select");
+
+    // Populate dropdown with menu items
+    $(".filter-head ul li a").each(function() {
+    var el = $(this);
+    $("<option />", {
+        "value"   : el.attr("href"),
+        "text"    : el.text()
+    }).appendTo("#select-r select");
+    });
+
+        // To make dropdown actually work
+        // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+    $("#select-r select").change(function() {
+        window.location = $(this).find("option:selected").val();
+    });
 });
 </script>
   </body>

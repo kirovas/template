@@ -13,7 +13,7 @@
   /* Theme Settings */
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size: 15px;
-  background: #333333;
+  background: url(../images/sidebar-bg.png);
   color: white;
   -webkit-box-shadow: inset 0 0 5px 5px #222222;
   -moz-box-shadow: inset 0 0 5px 5px #222222;
