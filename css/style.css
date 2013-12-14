@@ -204,63 +204,102 @@ padding:0px 3px;
  }
  .sidebar ul li, .sidr ul li{
 	margin-top:10px;
+	padding:0px;
  }
  .sidr ul li a{
 	font-size:18px;
 	color:#39bcd4;
-	line-height:33px;
+	line-height:40px;
 	display:inline-block;
 	font-family:'segoe UI';
+	padding-left:43px;
 }
 .sidr ul li a:hover{
 	color:#fff;
 	text-decoration:none;
 }
-.sidr ul li a:hover span{
-	color:#fff;
+
+/*icon start*/
+.main{
+	background:url(../images/main.png)no-repeat;
 }
-.icon {
-border: 1px solid #39bcd4;
-border-radius: 40px;
-padding: 4px 8px 3px 8px;
-margin-right:3px;
-font-size:22px;
+.about{
+background:url(../images/about.png)no-repeat;
 }
+.clients{
+	background:url(../images/clients.png)no-repeat;
+}
+.seamen{
+	background:url(../images/seamen.png)no-repeat;
+}
+.subagent{
+	background:url(../images/subagent.png)no-repeat;
+}
+.contacts{
+	background:url(../images/contacts.png)no-repeat;
+}
+.main:hover{
+	background:url(../images/main-h.png)no-repeat;
+}
+.about:hover{
+background:url(../images/about-h.png)no-repeat;
+}
+.clients:hover{
+	background:url(../images/clients-h.png)no-repeat;
+}
+.seamen:hover{
+	background:url(../images/seamen-h.png)no-repeat;
+}
+.subagent:hover{
+	background:url(../images/subagent-h.png)no-repeat;
+}
+.contacts:hover{
+	background:url(../images/contacts-h.png)no-repeat;
+}
+.main.active{
+	background:url(../images/main-a.png)no-repeat;
+}
+.about.active{
+background:url(../images/about-a.png)no-repeat;
+}
+.clients.active{
+	background:url(../images/clients-a.png)no-repeat;
+}
+.seamen.active{
+	background:url(../images/seamen-a.png)no-repeat;
+}
+.subagent.active{
+	background:url(../images/subagent-a.png)no-repeat;
+}
+.contacts.active{
+	background:url(../images/contacts-a.png)no-repeat;
+}
+
 .sidr ul li a:hover .icon{
-	color:#fff;
-	border-color:#fff;
+	
 }
  .sidebar ul li a {
-	font-size:22px;
-	color:#39bcd4;
-	line-height:33px;
-	display:block;
-	border:1px solid #39bcd4;
-	border-radius:40px;
-	text-align: center;
-padding: 6px 0px 0px 0px;
+	display:inline-block;
+	width:40px;
+	height:40px;
  }
  .sidebar ul li a:hover{
-	color:#fff;
-	border-color:#fff;
+	
  
  }
- .sidr ul li a.active span{
-	color:#dcc513;
- }
+ 
  .sidr ul li a.active .icon{
-	border-color:#dcc513;
+	
  
  }
  .sidebar ul li a.active, .sidr ul li a.active{
-	color:#dcc513;
+	
  }
  .sidebar ul li a.active{
-	border-color:#dcc513;
+	
  }
  .sidr ul li span{
-	width:40px;
-	color:#39bcd4;
+	
 	
  }
  .sidebar .logo-one{
