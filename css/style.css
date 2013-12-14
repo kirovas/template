@@ -207,7 +207,7 @@ padding:0px 3px;
  }
  .sidr ul li a{
 	font-size:18px;
-	color:#4d8080;
+	color:#39bcd4;
 	line-height:33px;
 	display:inline-block;
 	font-family:'segoe UI';
@@ -220,7 +220,7 @@ padding:0px 3px;
 	color:#fff;
 }
 .icon {
-border: 1px solid #4d8080;
+border: 1px solid #39bcd4;
 border-radius: 40px;
 padding: 4px 8px 3px 8px;
 margin-right:3px;
@@ -232,10 +232,10 @@ font-size:22px;
 }
  .sidebar ul li a {
 	font-size:22px;
-	color:#4d8080;
+	color:#39bcd4;
 	line-height:33px;
 	display:block;
-	border:1px solid #4d8080;
+	border:1px solid #39bcd4;
 	border-radius:40px;
 	text-align: center;
 padding: 6px 0px 0px 0px;
@@ -260,7 +260,7 @@ padding: 6px 0px 0px 0px;
  }
  .sidr ul li span{
 	width:40px;
-	color:#4d8080;
+	color:#39bcd4;
 	
  }
  .sidebar .logo-one{
