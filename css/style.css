@@ -51,7 +51,7 @@ input:invalid,textarea:invalid{-moz-box-shadow:0 0 5px red;-webkit-box-shadow:0 
 /* ------------------------- Generic */
 body {
     /*color:#ffffff;*/
-	background-image:url(../images/bg.jpg) ;
+	/*background-image:url(../images/bg.jpg) ;*/
 	background-position:top center;
 	background-repeat: no-repeat;
 background-attachment: fixed;
