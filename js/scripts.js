@@ -46,5 +46,25 @@ $(document).ready(function() {
 $('.pop-over').popover({
 	html : true
 });
+
+ /**********************************************
+    *Scroll to top
+    **********************************************/
+	
+    $('.scroll_top_a').click(function() {
+            $('body,html').animate({
+                scrollTop:0
+            },1200);
+    });
 	///////
+});
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+        // > 100px from top - show div
+		$('#scroll_top').show();
+    }
+    else {
+	$('#scroll_top').hide();
+        // <= 100px from top - hide div
+    }
 });

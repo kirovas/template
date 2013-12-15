@@ -362,6 +362,23 @@ color:#fff;
 .pop-wrap {
 width: 200px;
 }
+#scroll_top{
+	margin:10px 0px;
+	background:#54909d;
+	opacity:0.7;
+}
+.scroll_top_a {
+	display: block;
+width: 44px;
+margin: 0px auto 0 auto;
+color: #fff;
+
+border: 1px solid #fff;
+border-radius: 100%;
+padding: 8px 0px 4px 12px;
+
+font-size: 20px; }
+
 /* ------------------------- Media Queries */
  
 /* ---------------------------------------------------------------------------- */
@@ -486,6 +503,9 @@ position: absolute;
 z-index: 2;
 top: 165px;
 right: 326px;
+}
+.container{
+	padding-left:65px;
 }
 }
  @media (min-width: 992px){
