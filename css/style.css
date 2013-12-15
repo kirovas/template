@@ -501,8 +501,8 @@ and (max-width : 1024px) {
 	.odessa {
 position: absolute;
 z-index: 2;
-top: 165px;
-right: 326px;
+top: 153px;
+right: 305px;
 }
 .container{
 	padding-left:65px;
@@ -512,16 +512,16 @@ right: 326px;
 	.odessa {
 position: absolute;
 z-index: 2;
-top: 220px;
-right: 425px;
+top: 26px;
+right: 402px;
 }
 }
 @media (min-width: 1200px){
   .odessa {
 position: absolute;
 z-index: 2;
-top: 268px;
-right: 512px;
+top: 260px;
+right: 495px;
 }
 }
 
