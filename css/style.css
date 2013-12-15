@@ -122,9 +122,10 @@ label {}
 background:url(../images/filter-bg.png) no-repeat right;
 	height:47px;
 	margin-top:20px;
+	overflow:hidden;
  }
  .menu ul li{
-	width:14%!important;
+	width:14%;
 	padding:0px 10px;
  }
  .filter-head ul.navi li:last-child, .menu ul li:last-child{
@@ -351,12 +352,7 @@ margin-left: 5px;
 	color:#666;
  }
 /* ------------------------- Popups */
- .odessa {
-position: absolute;
-z-index: 2;
-top: 268px;
-right: 512px;
-}
+
 .odessa a{
 	display: inline-block;
 font-size: 14px;
@@ -397,7 +393,8 @@ width: 200px;
 @media only screen 
 and (max-width : 320px) {
     /* Styles */
- .filter-head ul.navi li{
+	.menu{height:auto;}
+ .filter-head ul.navi li, .menu ul li{
 	width:100%;
 	background:url(../images/filter-bg.png) no-repeat right;
  }
@@ -423,9 +420,10 @@ and (max-width : 480px) {
 	height:auto;
 background-position:top;	
 	}
- .filter-head ul.navi li{
+	.menu{height:auto;background-repeat:repeat;}
+ .filter-head ul.navi li, .menu ul li{
 	width:100%;
-	
+	background:url(../images/filter-bg.png) no-repeat right;
  }
  .filter-head ul{
 	background:#2c95a8;
@@ -448,12 +446,14 @@ background-position:top;
 @media only screen 
 and (min-width : 481px)
 and (max-width : 768px) {
+
     /* Styles */
 .filter-head{
 	height:auto;
 background-position:top;	
 	}
-.filter-head ul.navi li{
+.menu{height:auto;background-repeat:repeat;}
+.filter-head ul.navi li, .menu ul li{
 	width:100%;
 	
  }
@@ -479,9 +479,34 @@ background-position:top;
 and (min-width : 769px) 
 and (max-width : 1024px) {
     /* Styles */
- 
+ }
+ @media (min-width: 768px){
+	.odessa {
+position: absolute;
+z-index: 2;
+top: 165px;
+right: 326px;
 }
- 
+}
+ @media (min-width: 992px){
+	.odessa {
+position: absolute;
+z-index: 2;
+top: 220px;
+right: 425px;
+}
+}
+@media (min-width: 1200px){
+  .odessa {
+position: absolute;
+z-index: 2;
+top: 268px;
+right: 512px;
+}
+}
+
+
+
 /* Larger screens ----------- */
 @media only screen 
 and (min-width : 1024px) {
