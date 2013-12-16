@@ -783,7 +783,7 @@ pre code {
 
 .container {
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 65px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -6200,7 +6200,8 @@ button.close {
   padding: 1px;
   text-align: left;
   white-space: normal;
-  background-color: #ffffff;
+  background-color: rgba(0,0,0,0.9);
+  color:#fff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -6231,8 +6232,8 @@ button.close {
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ebebeb;
+  background-color: #282828;
+  
   border-radius: 5px 5px 0 0;
 }
 
@@ -6277,7 +6278,7 @@ button.close {
 }
 
 .popover.right .arrow {
-  top: 50%;
+  top: 30%;
   left: -11px;
   margin-top: -11px;
   border-right-color: #999999;
@@ -6288,7 +6289,7 @@ button.close {
 .popover.right .arrow:after {
   bottom: -10px;
   left: 1px;
-  border-right-color: #ffffff;
+  border-right-color: #000;
   border-left-width: 0;
   content: " ";
 }

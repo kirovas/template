@@ -91,6 +91,11 @@ label {}
 /* ------------------------- Lists */
  
 /* ------------------------- Layout */
+
+.margin20{
+	margin-top:20px;
+}
+.center{text-align:center;}
 .white{
 	background:#fff;
 }
@@ -106,6 +111,10 @@ label {}
 	height:47px;
 	margin-top:20px;
  }
+ #navi-s li {
+width: 20%;
+}
+
  .filter-head ul.navi, .menu ul{
 	list-style:none;
 	margin:0px;
@@ -146,6 +155,9 @@ background:url(../images/filter-bg.png) no-repeat right;
 	text-decoration:none;
 	font-family:'Segoe UI';
  }
+ #navi-s .small{
+	line-height:14px;
+}
  .filter-head ul li a:hover, .menu ul li a:hover{
 	text-decoration:none;
  }
@@ -173,6 +185,7 @@ background:url(../images/filter-bg.png) no-repeat right;
 	text-align:center;
 	background:none!important;
  }
+
  .filtered{
 	text-align:center;
 	margin-top:5px;
@@ -239,6 +252,7 @@ background:url(../images/about.png)no-repeat;
 .clients{
 	background:url(../images/clients.png)no-repeat;
 }
+.news{background:url(../images/news.png)no-repeat;}
 .seamen{
 	background:url(../images/seamen.png)no-repeat;
 }
@@ -257,6 +271,7 @@ background:url(../images/about-h.png)no-repeat;
 .clients:hover{
 	background:url(../images/clients-h.png)no-repeat;
 }
+.news:hover{background:url(../images/news-h.png)no-repeat;}
 .seamen:hover{
 	background:url(../images/seamen-h.png)no-repeat;
 }
@@ -275,6 +290,7 @@ background:url(../images/about-a.png)no-repeat;
 .clients.active{
 	background:url(../images/clients-a.png)no-repeat;
 }
+.news.active{background:url(../images/news-a.png)no-repeat;}
 .seamen.active{
 	background:url(../images/seamen-a.png)no-repeat;
 }
@@ -411,10 +427,12 @@ font-size: 20px; }
 and (max-width : 320px) {
     /* Styles */
 	.menu{height:auto;}
- .filter-head ul.navi li, .menu ul li{
+ .filter-head ul.navi li, .menu ul li, #navi-s li{
 	width:100%;
 	background:url(../images/filter-bg.png) no-repeat right;
+	border-bottom:1px solid #67b3bd;
  }
+ #navi-s .small{line-height:32px;}
  ul.sub{
 	position:relative;
 	overflow:hidden;
@@ -437,11 +455,14 @@ and (max-width : 480px) {
 	height:auto;
 background-position:top;	
 	}
+	
 	.menu{height:auto;background-repeat:repeat;}
- .filter-head ul.navi li, .menu ul li{
+ .filter-head ul.navi li, .menu ul li, #navi-s li{
 	width:100%;
 	background:url(../images/filter-bg.png) no-repeat right;
+	border-bottom:1px solid #67b3bd;
  }
+#navi-s .small{line-height:32px;}
  .filter-head ul{
 	background:#2c95a8;
 	overflow:hidden;
@@ -470,10 +491,11 @@ and (max-width : 768px) {
 background-position:top;	
 	}
 .menu{height:auto;background-repeat:repeat;}
-.filter-head ul.navi li, .menu ul li{
+.filter-head ul.navi li, .menu ul li, #navi-s li{
 	width:100%;
-	
+	border-bottom:1px solid #67b3bd;
  }
+#navi-s .small{line-height:32px;}
  .filter-head ul{
 	background:#2c95a8;
 	overflow:hidden;
