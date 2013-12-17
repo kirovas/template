@@ -1,3 +1,10 @@
+var totalCount = 4; // кол-во фонов
+
+function ChangeIt() {
+var num =  Math.ceil( Math.random() * totalCount );
+document.body.background = 'images/bg/'+num+'.jpg';
+document.body.style.backgroundRepeat = "repeat";
+}
 $(document).ready(function() {
     $('a[rel="left-menu"]').sidr({
       name: 'sidr-left',
