@@ -46,7 +46,7 @@ $(document).ready(function() {
 $('.pop-over').popover({
 	html : true
 });
-
+$("[data-toggle=tooltip]").tooltip( {'show': true,'placement': 'right',});
  /**********************************************
     *Scroll to top
     **********************************************/
