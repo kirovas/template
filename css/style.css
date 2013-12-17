@@ -58,6 +58,7 @@ background-attachment: fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
+background-size: cover;
 }
 .clear {clear:both;}
 img { /* Needed for mobile */
