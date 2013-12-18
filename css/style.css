@@ -168,13 +168,17 @@ background:url(../images/filter-bg.png) no-repeat right;
  ul.sub{
 	display:none;
 	position:absolute;
-	margin: 0px 0px 0px -10px;
+	margin: 7px 0px 0px -10px;
 	padding:7px 0px;
 	width:100%;
 	background:url(../images/filter-bg.png) top right;
 	z-index:3;
 	text-align:center;
  }
+ .dropdown {
+
+padding-bottom: 22px!important;
+}
  .sub li {
 	display:block;
 	width:100%!important;
