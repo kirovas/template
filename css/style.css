@@ -476,6 +476,14 @@ and (max-width : 320px) {
  }
 }
  
+ @media only screen 
+and (min-width : 240px)
+and (max-width : 320px) {
+.sidebar{display:none;}
+	.mob-button{display:block;}
+	#scroll_top{width:81.5%;}
+
+}
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px)
