@@ -108,7 +108,7 @@ label {}
 	margin-top:30px;
  }
  .filter-head{
-	background:url(../images/filter-bg.png) no-repeat left;
+	background:url(../images/filter-bg.png) no-repeat right;
 	height:47px;
 	margin-top:20px;
  }
@@ -177,7 +177,7 @@ background:url(../images/filter-bg.png) no-repeat right;
  }
  .dropdown {
 
-padding-bottom: 22px!important;
+
 }
  .sub li {
 	display:block;
@@ -215,7 +215,7 @@ line-height: 16px;
 height:50px;
 padding:0px 3px;
 }
- .Bulk , .Rank, .Captain{
+ .Bulk , .Rank, .Captain, .Chief{
 	display:none;
  }
  .sidebar{
@@ -246,7 +246,9 @@ padding:0px 3px;
 	color:#fff;
 	text-decoration:none;
 }
-
+#navigation {
+margin-bottom: 85px;
+}
 /*icon start*/
 .main{
 	background:url(../images/main.png)no-repeat;
@@ -388,6 +390,9 @@ width: 200px;
 	margin:10px 0px;
 	background:#54909d;
 	opacity:0.7;
+	position: fixed;
+bottom: 0px;
+width:86.5%;
 }
 .scroll_top_a {
 	display: block;
@@ -400,7 +405,26 @@ border-radius: 100%;
 padding: 8px 0px 4px 12px;
 
 font-size: 20px; }
-
+.mob-button{
+	position:absolute;
+	top:40px;
+	left:0px;
+	
+	height:40px;
+	background:#000;
+	display:none;
+}
+.mob-button a{
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 3px;
+	color:#fff;
+	line-height:37px;
+	text-transform:uppercase;
+}
+.mob-button a:hover{
+	text-decoration:none;
+}
 /* ------------------------- Media Queries */
  
 /* ---------------------------------------------------------------------------- */
@@ -457,6 +481,9 @@ and (max-width : 320px) {
 and (min-width : 321px)
 and (max-width : 480px) {
     /* Styles */
+	.sidebar{display:none;}
+	.mob-button{display:block;}
+	#scroll_top{width:81.5%;}
 .filter-head{
 	height:auto;
 background:none;	
@@ -490,8 +517,10 @@ background:none;
 @media only screen 
 and (min-width : 481px)
 and (max-width : 768px) {
-
+#scroll_top{width:85.5%;}
     /* Styles */
+	.sidebar{display:none;}
+	.mob-button{display:block;}
 .filter-head{
 	height:auto;
 background:none;	

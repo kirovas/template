@@ -1,4 +1,4 @@
-var totalCount = 4; // кол-во фонов
+var totalCount = 5; // кол-во фонов
 
 function ChangeIt() {
 var num =  Math.ceil( Math.random() * totalCount );
@@ -27,11 +27,10 @@ $(document).ready(function() {
   });
 });
 	/////////
-	$('.filter-head ul li').mouseenter(function(){
-        $(this).find('.sub').show(200);
-    }); $('.filter-head ul li').mouseleave(function() {
-        $(this).find('.sub').hide(500);
-    });
+	$('.filter-head ul li').click(function(){
+        $(this).find('.sub').slideToggle(200);
+    }); 
+   
 	/*
     // Create the dropdown base
     $("<select class='visible-xs' />").appendTo("#select-r");
@@ -66,9 +65,20 @@ $(document).ready(function() {
   });   
         
 });
+//$('.pop-over').popover({
+	//html : true
+//});
 $('.pop-over').popover({
-	html : true
-});
+                    html: true,
+                    trigger: 'manual'
+                }).click(function(e) {
+                    $(this).popover('show');
+                    $('.popover-title').append('<button type="button" class="close" id="topr">&times;</button>');
+                    $('.close').click(function(e){
+                        $('.pop-over').popover('hide');
+                    });
+                    e.preventDefault();
+                });
 $("[data-toggle=tooltip]").tooltip( {'show': true,'placement': 'right',});
  /**********************************************
     *Scroll to top
@@ -84,10 +94,10 @@ $("[data-toggle=tooltip]").tooltip( {'show': true,'placement': 'right',});
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
         // > 100px from top - show div
-		$('#scroll_top').show();
+		$('#scroll_top, #scroll_top_c').show();
     }
     else {
-	$('#scroll_top').hide();
+	$('#scroll_top, #scroll_top_c').hide();
         // <= 100px from top - hide div
     }
 });
