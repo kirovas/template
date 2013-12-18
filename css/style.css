@@ -171,7 +171,7 @@ background:url(../images/filter-bg.png) no-repeat right;
 	margin: 0px 0px 0px -10px;
 	padding:7px 0px;
 	width:100%;
-	background:#2894a2;
+	background:url(../images/filter-bg.png) top right;
 	z-index:3;
 	text-align:center;
  }
@@ -338,8 +338,9 @@ width: 160px;
 margin: 40px auto 30px auto;
 }
  .arrow-open{
-	position: absolute;
-bottom: 30px;
+	position: relative;
+bottom: 0px;
+width: 40px;
 font-size: 13px;
 color: #4d8080;
 line-height: 33px;
@@ -454,18 +455,18 @@ and (max-width : 480px) {
     /* Styles */
 .filter-head{
 	height:auto;
-background-position:top;	
+background:none;	
 	}
 	
 	.menu{height:auto;background-repeat:repeat;}
  .filter-head ul.navi li, .menu ul li, #navi-s li{
 	width:100%;
-	background:url(../images/filter-bg.png) no-repeat right;
+	/*background:url(../images/filter-bg.png) no-repeat right;*/
 	border-bottom:1px solid #67b3bd;
  }
 #navi-s .small{line-height:32px;}
  .filter-head ul{
-	background:#2c95a8;
+	background:url(../images/filter-bg.png) top right;
 	overflow:hidden;
  }
  ul.sub{
@@ -489,7 +490,7 @@ and (max-width : 768px) {
     /* Styles */
 .filter-head{
 	height:auto;
-background-position:top;	
+background:none;	
 	}
 .menu{height:auto;background-repeat:repeat;}
 .filter-head ul.navi li, .menu ul li, #navi-s li{
@@ -498,7 +499,7 @@ background-position:top;
  }
 #navi-s .small{line-height:32px;}
  .filter-head ul{
-	background:#2c95a8;
+	background:url(../images/filter-bg.png) top right;
 	overflow:hidden;
  }
  ul.sub{

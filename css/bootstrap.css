@@ -6085,6 +6085,7 @@ button.close {
   opacity: 0;
   filter: alpha(opacity=0);
   visibility: visible;
+  width:auto;
 }
 
 .tooltip.in {
@@ -6113,13 +6114,17 @@ button.close {
 }
 
 .tooltip-inner {
-  max-width: 200px;
+  max-width: 300px;
+  min-width:110px;
   padding: 3px 8px;
-  color: #ffffff;
+  color: #39bcd4;
+  display:block;
   text-align: center;
   text-decoration: none;
   background-color: #000000;
   border-radius: 4px;
+  font-family: 'segoe UI';
+  font-size:14px;
 }
 
 .tooltip-arrow {
