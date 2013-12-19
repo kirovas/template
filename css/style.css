@@ -392,7 +392,8 @@ width: 200px;
 	opacity:0.7;
 	position: fixed;
 bottom: 0px;
-width:86.5%;
+left:0px;
+width:100%;
 }
 .scroll_top_a {
 	display: block;
@@ -481,7 +482,7 @@ and (min-width : 240px)
 and (max-width : 320px) {
 .sidebar{display:none;}
 	.mob-button{display:block;}
-	#scroll_top{width:81.5%;}
+
 
 }
 /* Smartphones (landscape) ----------- */
@@ -491,7 +492,7 @@ and (max-width : 480px) {
     /* Styles */
 	.sidebar{display:none;}
 	.mob-button{display:block;}
-	#scroll_top{width:81.5%;}
+	
 .filter-head{
 	height:auto;
 background:none;	
@@ -525,7 +526,7 @@ background:none;
 @media only screen 
 and (min-width : 481px)
 and (max-width : 768px) {
-#scroll_top{width:85.5%;}
+
     /* Styles */
 	.sidebar{display:none;}
 	.mob-button{display:block;}
