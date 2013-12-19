@@ -21,11 +21,18 @@ html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,ad
 /* Minimal base styles
 More Info: https://github.com/paulirish/html5-boilerplate/blob/362d0b7/css/style.css
 */
+::selection {
+background-color: #428bca;
+color: #fff;
+text-shadow: none;
+}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-y:scroll}
 a:link{-webkit-tap-highlight-color:#FF5E99}
 a:hover,a:active{outline:none}
 a,a:active,a:visited{color:#607890}
 a:hover{color:#036}
+a:focus{color:#036;outline: none!important;
+}
 ul,ol{margin-left:2em}
 ol{list-style-type:decimal}
 nav ul,nav li{list-style:none;list-style-image:none;margin:0}
