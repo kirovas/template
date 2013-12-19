@@ -505,6 +505,10 @@ background:none;
 	width:100%;
 	/*background:url(../images/filter-bg.png) no-repeat right;*/
 	border-bottom:1px solid #67b3bd;
+	padding:0px;
+ }
+ .filter-head ul.navi li.dropdown > a{
+	background: url(../images/icon-list.png)no-repeat 80% 50%;
  }
 #navi-s .small{line-height:32px;}
  .filter-head ul{
@@ -514,7 +518,7 @@ background:none;
  ul.sub{
 	position:relative;
 	overflow:hidden;
-	margin: 0px 0px 0px -4px;
+	margin: 0px ;
  }
  .fil{
 	background:#2c95a8;
@@ -540,6 +544,10 @@ background:none;
 .filter-head ul.navi li, .menu ul li, #navi-s li{
 	width:100%;
 	border-bottom:1px solid #67b3bd;
+	padding:0px;
+ }
+ .filter-head ul.navi li.dropdown > a{
+	background: url(../images/icon-list.png)no-repeat 80% 50%;
  }
 #navi-s .small{line-height:32px;}
  .filter-head ul{
@@ -549,7 +557,7 @@ background:none;
  ul.sub{
 	position:relative;
 	overflow:hidden;
-	margin: 0px 0px 0px -4px;
+	margin: 0px;
  }
  .fil{
 	background:#2c95a8;
