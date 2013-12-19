@@ -3,7 +3,7 @@ var totalCount = 5; // кол-во фонов
 function ChangeIt() {
 var num =  Math.ceil( Math.random() * totalCount );
 document.body.background = 'images/bg/'+num+'.jpg';
-document.body.style.backgroundRepeat = "repeat";
+document.body.style.backgroundRepeat = "no-repeat";
 }
 $(document).ready(function() {
     $('a[rel="left-menu"]').sidr({
