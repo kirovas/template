@@ -33,6 +33,7 @@ a,a:active,a:visited{color:#607890}
 a:hover{color:#036}
 a:focus{color:#036;outline: none!important;
 }
+.btn-info{color:#fff!important;}
 ul,ol{margin-left:2em}
 ol{list-style-type:decimal}
 nav ul,nav li{list-style:none;list-style-image:none;margin:0}
@@ -243,11 +244,12 @@ padding:0px 3px;
  }
  .sidr ul li a{
 	font-size:18px;
-	color:#39bcd4;
-	line-height:40px;
+	color:#508887;
+	
 	display:inline-block;
 	font-family:'segoe UI';
-	padding-left:43px;
+	padding: 9px 0px 10px 43px;
+letter-spacing: -1px;
 }
 .sidr ul li a:hover{
 	color:#fff;
@@ -258,61 +260,84 @@ margin-bottom: 85px;
 }
 /*icon start*/
 .main{
-	background:url(../images/main.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px 0px;
 }
 .about{
-background:url(../images/about.png)no-repeat;
+background:url(../images/icon_crs_set.png)no-repeat;
+background-position: -8px -50px;
 }
 .clients{
-	background:url(../images/clients.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -103px;
 }
-.news{background:url(../images/news.png)no-repeat;}
+.news{background:url(../images/icon_crs_set.png)no-repeat;
+		background-position: -8px -266px;
+}
+
 .seamen{
-	background:url(../images/seamen.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -157px;
 }
 .subagent{
-	background:url(../images/subagent.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -214px;
 }
 .contacts{
-	background:url(../images/contacts.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -319px;
 }
 .main:hover{
-	background:url(../images/main-h.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -369px;
 }
 .about:hover{
-background:url(../images/about-h.png)no-repeat;
+background:url(../images/icon_crs_set.png)no-repeat;
+background-position: -8px -419px;
 }
 .clients:hover{
-	background:url(../images/clients-h.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -472px;
 }
-.news:hover{background:url(../images/news-h.png)no-repeat;}
+.news:hover{background:url(../images/icon_crs_set.png)no-repeat;
+		background-position: -8px -635px;}
 .seamen:hover{
-	background:url(../images/seamen-h.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -526px;
 }
 .subagent:hover{
-	background:url(../images/subagent-h.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -583px;
 }
 .contacts:hover{
-	background:url(../images/contacts-h.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -688px;
 }
 .main.active{
-	background:url(../images/main-a.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -740px;
 }
 .about.active{
-background:url(../images/about-a.png)no-repeat;
+background:url(../images/icon_crs_set.png)no-repeat;
+background-position: -8px -789px;
 }
 .clients.active{
-	background:url(../images/clients-a.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -842px;
 }
-.news.active{background:url(../images/news-a.png)no-repeat;}
+.news.active{background:url(../images/icon_crs_set.png)no-repeat;
+		background-position: -8px -1005px;}
 .seamen.active{
-	background:url(../images/seamen-a.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -896px;
 }
 .subagent.active{
-	background:url(../images/subagent-a.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -953px;
 }
 .contacts.active{
-	background:url(../images/contacts-a.png)no-repeat;
+	background:url(../images/icon_crs_set.png)no-repeat;
+	background-position: -8px -1058px;
 }
 
 .sidr ul li a:hover .icon{
@@ -321,15 +346,17 @@ background:url(../images/about-a.png)no-repeat;
  .sidebar ul li a {
 	display:inline-block;
 	width:40px;
-	height:40px;
+	height:41px;
  }
  .sidebar ul li a:hover{
 	
  
  }
  
- .sidr ul li a.active .icon{
-	
+ .sidr ul li a i{
+	display:inline-block;
+	width:40px;
+	height:41px;
  
  }
  .sidebar ul li a.active, .sidr ul li a.active{
