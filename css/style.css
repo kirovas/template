@@ -611,7 +611,7 @@ and (max-width : 1024px) {
 	.odessa {
 position: absolute;
 z-index: 2;
-top: 153px;
+top: 121px;
 right: 305px;
 }
 .container{
@@ -622,16 +622,16 @@ right: 305px;
 	.odessa {
 position: absolute;
 z-index: 2;
-top: 26px;
-right: 402px;
+top: 162px;
+right: 400px;
 }
 }
 @media (min-width: 1200px){
   .odessa {
 position: absolute;
 z-index: 2;
-top: 260px;
-right: 495px;
+top: 206px;
+right: 489px;
 }
 }
 

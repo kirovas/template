@@ -5,12 +5,24 @@ var num =  Math.ceil( Math.random() * totalCount );
 document.body.background = 'images/bg/'+num+'.jpg';
 document.body.style.backgroundRepeat = "no-repeat";
 }
+$(window).touchwipe({
+        wipeLeft: function() {
+          // Close
+          $.sidr('close', 'sidr-main');
+        },
+        wipeRight: function() {
+          // Open
+          $.sidr('open', 'sidr-main');
+        },
+        preventDefaultEvents: false
+      });
 $(document).ready(function() {
     $('a[rel="left-menu"]').sidr({
       name: 'sidr-left',
       side: 'left' // By default
 	  
     });
+	
 	//scroll to id //
 	$(function() {
   $('a[href*=#]:not([href=#])').click(function() {
