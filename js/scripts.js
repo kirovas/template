@@ -8,11 +8,11 @@ document.body.style.backgroundRepeat = "no-repeat";
 $(window).touchwipe({
         wipeLeft: function() {
           // Close
-          $.sidr('close', 'sidr-main');
+          $.sidr('close', 'sidr-left');
         },
         wipeRight: function() {
           // Open
-          $.sidr('open', 'sidr-main');
+          $.sidr('open', 'sidr-left');
         },
         preventDefaultEvents: false
       });
