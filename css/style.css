@@ -214,9 +214,13 @@ top: 0px;
 width: 100%;
 background: url(../images/filter-bg.png) top right;
 z-index: 3;
-text-align: left!important;
-}
 
+}
+.level3 ul li a{
+	text-align: left!important;
+	font-weight:normal!important;
+	padding-left: 20px;
+}
  .filtered{
 	text-align:center;
 	margin-top:5px;
@@ -523,6 +527,12 @@ and (max-width : 320px) {
 	overflow:hidden;
 	margin: 0px 0px 0px -4px;
  }
+ .level3 ul {
+	position:relative;
+	overflow:hidden;
+	margin: 0px 0px 0px -4px;
+	right:0px;
+ }
  .fil{
 	background:#2c95a8;
 	padding-top:10px;
@@ -572,6 +582,12 @@ background:none;
 	overflow:hidden;
 	margin: 0px ;
  }
+ .level3 ul {
+	position:relative;
+	overflow:hidden;
+	margin: 0px 0px 0px -4px;
+	right:0px;
+ }
  .fil{
 	background:#2c95a8;
 	padding-top:10px;
@@ -610,6 +626,12 @@ background:none;
 	position:relative;
 	overflow:hidden;
 	margin: 0px;
+ }
+ .level3 ul {
+	position:relative;
+	overflow:hidden;
+	margin: 0px 0px 0px -4px;
+	right:0px;
  }
  .fil{
 	background:#2c95a8;
