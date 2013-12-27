@@ -39,10 +39,13 @@ $(document).ready(function() {
   });
 });
 	/////////
-	$('.filter-head ul li').click(function(){
+	/*$('.filter-head ul li').click(function(){
         $(this).find('.sub').slideToggle(200);
-    }); 
-   
+    }); */
+   $('.filter-head ul li').click(function(ev) {
+    $(this).find('>div > ul').slideToggle();
+    ev.stopPropagation();
+});
 	/*
     // Create the dropdown base
     $("<select class='visible-xs' />").appendTo("#select-r");
@@ -72,8 +75,8 @@ $(document).ready(function() {
 	*/
 	$('#navi-r a').click(function() {
     var el = $(this).text();
-         $("." + el).fadeIn( "slow", function() {
-    // Animation complete
+         $("[data-toggle='" + el +"']").fadeIn( "slow", function() {
+    // Animation complete$("ul[data-slide='" + current +"']");
   });   
         
 });
