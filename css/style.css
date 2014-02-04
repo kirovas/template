@@ -27,9 +27,9 @@ color: #fff;
 text-shadow: none;
 }
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-y:scroll}
-a:link{-webkit-tap-highlight-color:#FF5E99}
+a:link{-webkit-tap-highlight-color:#4d8080}
 a:hover,a:active{outline:none}
-a,a:active,a:visited{color:#607890}
+a,a:active,a:visited{color:#4d8080}
 a:hover{color:#036}
 a:focus{color:#036;outline: none!important;
 }
