@@ -17,11 +17,11 @@ $(window).touchwipe({
         preventDefaultEvents: false
       });
 $(document).ready(function() {
-    $('a[rel="left-menu"]').sidr({
+    /*$('a[rel="left-menu"]').sidr({
       name: 'sidr-left',
       side: 'left' // By default
 	  
-    });
+    });*/
 	
 	//scroll to id //
 	$(function() {

@@ -484,6 +484,18 @@ font-size: 20px; }
 .mob-button a:hover{
 	text-decoration:none;
 }
+/*page vacancies style added 16.01.2014*/
+	p.description span{
+		color:#428bca;
+		font-weight:bold;
+		margin-right:10px;
+	}
+	.share span {
+	float: left;
+	line-height: 35px;
+	font-size: 16px;
+}
+
 /* ------------------------- Media Queries */
  
 /* ---------------------------------------------------------------------------- */
